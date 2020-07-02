@@ -102,7 +102,7 @@ docker-compose up -d nginx mysql
 Enter the docker workspace. This is like an ssh tunnel but to a special docker container.
 
 ```bash
-docker-compose exec workspace bash
+docker-compose exec --user=laradock workspace bash
 ```
 
 run composer commands from this bash prompt
